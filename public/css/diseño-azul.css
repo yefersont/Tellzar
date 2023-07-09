@@ -1,0 +1,1678 @@
+
+/********************** barra de navegacion antigua version **********************/
+
+/* version antigua
+.nav{
+    width: 100%;
+    background-color:#000000;
+    display: flex;
+    height: 14%;
+    padding-top: 1%;
+    color:#000000;
+    justify-content: space-between;
+    transition: all 0.5s ease;  
+}
+.nav.active{
+    padding: 15px;
+    background-color: #000000;
+
+}
+.nav.active:hover {
+
+    color: #000000f3;
+    text-decoration: none;
+    background: #000000;
+    padding: 15px;
+    border-radius: 20px;
+}
+[id=div-inicio2]{
+
+    text-align:right;
+    margin-top: 10%;
+}
+.titulo{
+  width:100%;
+  font-size: 200%;
+  font-weight: 500;    
+  margin-left: 1.5%;
+  color:#ffffff;
+}
+.menu{
+    
+  justify-content: center;
+  display:flex;
+  list-style: none;
+  
+}
+.menu li{
+  margin: 20px;
+  color: #fffffff3;
+
+}
+.menu li a{
+  color: #fffffff3;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: all 0.5s ease;
+
+}
+.menu li a:hover{
+  color: #000000f3;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 10px 15px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#icon-menu{
+    
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    font-size: 20px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
+
+/********************************************************** Barra de navegacion *********************+******************/
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #000815;
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 2;
+  }
+  
+  .header-content{
+    color: rgb(255, 255, 255);
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo{ 
+    margin-top: 6px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s all ease-in-out;
+  }
+  
+  .menu {
+    height: 100px;
+  }
+  
+  .menu nav{
+    height: 100%;
+  }
+  
+  .menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu nav ul li{
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .menu-selected:before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .menu nav ul li a{
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 300ms;
+    transition: all 0.5s ease;  
+  
+  }
+  
+  .menu nav ul li a:hover{
+    text-decoration: none;
+    color: #00112f;
+    background: #ffffff;
+    transition: all 0.5s ease;
+    border-radius: 7.5px;   
+  }
+  
+  .menu .text-menu-selected{
+    color: #ffffff;
+  }
+  
+  .menu nav ul li a i{
+    display: none;
+  }
+  
+  #icon-menu{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #00112f;
+    border-radius: 100%;
+    color: #f5f5f5;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  #icon-menu:hover{
+    opacity: 0.8;
+  }
+  
+  /******************************************** Portada *************************+/
+  
+  
+  .container-cover{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 80px;
+    background-image: url(../img/img8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .container-cover:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(38, 172, 255, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .container-info-cover{
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .container-info-cover h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .container-info-cover p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+  
+  /************************************ Inicio *****************/
+  .introduccion{
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  
+  .index-div{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    
+  }
+  div.index3{
+    width: 50%;
+    margin-left: 1%;
+  
+  }
+  div.index2{
+    width: 45%;
+  
+  }
+  .imagenes{
+  
+    max-width:100% ;
+  
+  }
+  .imagenes img{
+    width: 100%;
+  }
+  .index2 h2{
+  
+    text-align: center;
+    color: #302f2f;
+    font-weight: 700;
+  
+  }
+  .index2 h2.fab{
+  
+  color: #302f2f;
+  font-weight: 700;
+  
+  }
+  .container-more a{
+    margin: auto;
+    margin-left: 45%;
+  
+  }
+  
+  
+  /*****************************  Tienda  **********************************/
+    
+  
+  /*  .div-tienda{
+  
+      display: flex;
+      flex-direction: column;    
+      max-width: 800px;
+      margin: 0;
+      margin-top: 6%;
+      margin-bottom: 5%;
+      align-items: initial;
+    
+    }
+    .linea1-tienda{
+  
+      width: 100%;
+      height: 100%;
+      flex-wrap: wrap;
+      border-radius: 2.5%;
+      border-style: solid;
+      border-color: #ffffff;
+      background-color: rgb(255, 255, 255);
+      box-shadow: #7a7a7a;
+    }*/
+    
+  .titulo-productos h1{
+    text-align: center;
+    margin-top: 5%;
+  }
+  .titulo-productos p{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 30px;
+  }
+  .div-tienda{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 75%;
+    margin: auto;
+    margin-top: 6%;
+    margin-bottom: 7%;
+    align-items: center;
+  
+  }
+  .div-tienda p{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 75%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    align-items: center;
+    text-align: justify;
+    font-size: 150%;
+  }
+  .linea1-tienda{
+  
+    width: 31%;
+    height: 100%;
+    flex-wrap: wrap;
+    border-radius: 2.5%;
+    border-style: solid;
+    border-color: #ffffff;
+    background-color: rgb(255, 255, 255);
+    box-shadow: #7a7a7a;
+  }
+  
+  .linea1-tienda h3{
+  
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 150%;
+    margin-top: 5%;
+    margin-left: 5%;
+  
+  }
+  .linea1-tienda p{
+  
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 110%;
+    margin-top: 5%;
+    margin-left: 5%;
+  
+  }
+  
+  
+  .linea1-tienda button{
+    width: 40%;
+    margin-left: 55%;
+    margin-bottom: 2%;
+  }
+  
+  .linea1-tienda:hover{
+  
+    width: 31%;
+    height: 100%;
+    flex-wrap: wrap;
+    border-radius: 2.5%;
+    border-style: solid;
+    border-color: #97cbdc;
+    background-color: rgb(255, 255, 255);
+    transition: 0.2s ease-in-out;
+  }
+  /***************** Boton WhatsApp ***********************/
+  
+  .container-boton{
+    background-color: #2e6329;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 50px;
+    right: 25px;
+    padding: 13px;
+    transition: ease 0.3s;
+    animation: efecto 3s infinite;
+  }
+  
+  .container-boton:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  
+  .boton{
+    width: 60px;
+    transition: ease 1s;
+  
+  }
+  
+  @keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+    }
+  }
+  /****************************** Servicios **********************/
+  .servicios{
+    width: 100%;
+    background:url("../img/Fotos/panel/PANEL JAPONES MONTAJE 4.jpg");
+    background-size:contain;
+  }
+  .div-servicios{
+  
+    display: flex;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 6%;
+    margin-bottom: 7%;
+    align-items: center;
+  }
+  .div-servicios2{
+  
+    width: 48%;
+    flex-wrap:nowrap;
+    border-radius: 1px; 
+    background-color: #303fcf;
+    color: #ffffff;
+    box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.865);
+  }
+  .div-servicios2 h1{
+  
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    text-align: center;
+    font-size: 220%;
+    margin-top: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-left: 5%;
+    text-shadow: 2px 2px 1px black;
+  }
+  .div-servicios2 p{
+  
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    text-align: left;
+    font-size: 150%;
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 1%;
+    list-style:symbols();
+    text-shadow: 1px 1px 1px black;
+  
+  }
+  .div-servicios2 li{
+  
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    text-align: justify;
+    font-size: 150%;
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 1%;
+    list-style:symbols();
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  
+  
+  /************************************************ footer *******************************************/
+  
+  footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-size: cover;  
+    position: relative;
+    background-color:#253954; 
+}
+  
+  
+  .secund-div{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 7%;
+    margin-bottom: 7%;
+  }
+  
+  
+  .h5-footer h5{
+    margin-bottom: 3%;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  .h5-footer li{
+    list-style-type: none;
+    color: #ffffff;
+
+  }
+  
+  .h5-footer ul{
+  
+    margin: 0;
+    padding: 0;
+  }
+  
+  .h5-footer a{
+    margin-top: 1%;
+    color: #ffffff;
+    font-weight: 600;
+    opacity: 0.8;
+  }
+  
+  .box__footer a .fab{
+    font-size: 20px;
+    
+  }
+  
+  
+  
+  /********************************************** panel ****************************************/
+  
+  #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {
+    opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 50%;
+    max-width: 100%;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto; 
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {
+  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 100px;
+    right: 35px;
+    color: #21212193;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+  
+  /*********************************************sheer elegance********************************************/
+  
+  
+  #myImg1 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg1:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content1 {
+    margin: auto;
+    display: block;
+    width: 50%;
+    max-width: 100%;
+  }
+  
+  /* Caption of Modal Image */
+  #caption1 {
+    margin: auto; 
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content1, #caption1 {
+  
+    -webkit-animation-name: zoom1;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom1;
+    animation-duration: 0.6s;
+  
+  }
+  
+  @-webkit-keyframes zoom1 {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom1 {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close1 {
+    position: absolute;
+    top: 100px;
+    right: 35px;
+    color: #21212193;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close1:hover,
+  .close1:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content1 {
+      width: 100%;
+    }
+  }
+  
+  /*********************************************sher screen********************************************/
+  
+  #myImg2 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg2:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content2 {
+    margin: auto;
+    display: block;
+    width: 50%;
+    max-width: 100%;
+  }
+  
+  /* Caption of Modal Image */
+  #caption2 {
+    margin: auto; 
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content2, #caption2 {
+  
+    -webkit-animation-name: zoom2;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom2;
+    animation-duration: 0.6s;
+  
+  }
+  
+  @-webkit-keyframes zoom2 {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom2 {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close2 {
+    position: absolute;
+    top: 100px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close2:hover,
+  .close2:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content2 {
+      width: 100%;
+    }
+  }
+  
+  /******************************+ Persiana Vertical *********************************/
+  
+  #myImg3 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg3:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal3 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content3 {
+    margin: auto;
+    display: block;
+    width: 50%;
+    max-width: 100%;
+  }
+  
+  /* Caption of Modal Image */
+  #caption3 {
+    margin: auto; 
+    display: block;
+    width: 80%;
+    max-width: 100%;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content3, #caption3 {
+  
+    -webkit-animation-name: zoom3;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom3;
+    animation-duration: 0.6s;
+  
+  }
+  
+  @-webkit-keyframes zoom3 {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom3 {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close3 {
+    position: absolute;
+    top: 100px;
+    right: 35px;
+    color: #18181893;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close3:hover,
+  .close3:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content3 {
+      width: 100%;
+    }
+  }
+  
+  /************************************ Romana *********************************/
+  
+  #myImg4 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg4:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal4 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content4 {
+    margin: auto;
+    display: block;
+    width: 50%;
+    max-width: 100%;
+  }
+  
+  /* Caption of Modal Image */
+  #caption4 {
+    margin: auto; 
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content4, #caption4 {
+  
+    -webkit-animation-name: zoom4;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom4;
+    animation-duration: 0.6s;
+  
+  }
+  
+  @-webkit-keyframes zoom4 {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom4 {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close4 {
+    position: absolute;
+    top: 100px;
+    right: 35px;
+    color: #21212193;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close4:hover,
+  .close4:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content4 {
+      width: 100%;
+    }
+  }
+  
+  /*************************** Enrollables ****************/
+  
+  #myImg5 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg5:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal5 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content5 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 450PX;
+  }
+  
+  /* Caption of Modal Image */
+  #caption5 {
+    margin: auto; 
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content5, #caption5 {
+  
+    -webkit-animation-name: zoom5;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom5;
+    animation-duration: 0.6s;
+  
+  }
+  
+  @-webkit-keyframes zoom5 {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom5 {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close5{
+    position: absolute;
+    top: 100px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close5:hover,
+  .close5:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content5 {
+      width: 100%;
+    }
+  }
+  
+  /****************************** Mini ppersiana en aluminio *************************/
+  
+  
+  #myImg6 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg6:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal6 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content6 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 450PX;
+  }
+  
+  /* Caption of Modal Image */
+  #caption6 {
+    margin: auto; 
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content6, #caption6 {
+  
+    -webkit-animation-name: zoom6;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom6;
+    animation-duration: 0.6s;
+  
+  }
+  
+  @-webkit-keyframes zoom6 {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom6 {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close6{
+    position: absolute;
+    top: 100px;
+    right: 35px;
+    color: #21212193;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close6:hover,
+  .close6:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content6 {
+      width: 100%;
+    }
+  }
+  
+  
+  
+  
+  /*********************************************** Version movil *************************************************/
+  
+  @media screen and (max-width:1200px) {
+  
+    /****** barra de navegacion ****/
+    .header-content,
+    .index-div,
+    footer{
+      max-width: 100%;
+      padding: 0 20px;
+    }
+    .menu{
+      width: 400px;
+      height: 80px;
+      margin: auto;
+      justify-content: space-evenly;
+    }
+    .menu li{
+      margin: 2px;
+      color: #fffffff3;
+    }
+    .menu li a{
+      color: #fffffff3;
+      text-decoration: none;
+      padding: 2px 2px;
+      transition: all 0.5s ease;
+      font-size: 15px;
+    
+    }
+  }
+  
+  
+    @media screen and (max-width: 1000px) {
+  
+      .index-div{
+        width: 100%;
+        flex-direction: column;
+        padding: auto;
+      }
+      .introduccion h2{
+        font-size: 200%;
+        text-align: center;
+      }
+      .introduccion p{
+        font-size: 160%;
+        text-align: justify;
+        padding: 4%;   
+      }
+      .index2 .imagenes img{
+        width: 225%;
+        height: 100%;
+      }
+      .index3 p{
+        width: 200%;
+        font-size: 200%;
+        text-align: justify;
+  
+        }
+      .index3 h2{
+        width: 200%;
+        font-size: 200%;
+        text-align: justify;
+        margin: auto;
+        }
+  
+      /******************** footer ***************/
+      footer{
+        width: 100%;
+        background-color:#253954; 
+        transform: translateY(40px);
+        
+      }
+      .secund-div{
+        flex-direction:row;
+      }
+      .h5-footer{
+        margin-top: 5%;
+        margin-bottom: 2%;
+      }
+      .h5-footer h5{
+        color: #ffffff;
+      }
+  
+    }
+  
+  
+    @media screen and (max-width: 800px){
+  
+  
+  /*********** Barra de navegacion movil *********************/
+  
+          .header-content,
+          .index-div{
+            max-width: 100%;
+            padding: 0 20px;
+          }
+          .menu{
+            width: 400px;
+            height: 80px;
+            margin: auto;
+            justify-content: space-evenly;
+          }
+          .menu li{
+            margin: 2px;
+            color: #fffffff3;
+          }
+          .menu li a{
+            color: #fffffff3;
+            text-decoration: none;
+            padding: 2px 2px;
+            transition: all 0.5s ease;
+            font-size: 15px;
+          
+          }
+        
+        /********************** inicio *****************/
+  
+          .index-div{
+            width: 100%;
+            flex-direction: column;
+            padding: auto;
+          }
+          .introduccion h2{
+            font-size: 200%;
+            text-align: center;
+          }
+          .introduccion p{
+            font-size: 160%;
+            text-align: justify;
+            padding: 4%;   
+          }
+          .index2 .imagenes img{
+            width: 225%;
+            height: 100%;
+          }
+          .index3 p{
+            width: 200%;
+            font-size: 160%;
+            text-align: justify;
+            margin: auto;
+            }
+          .container-more p{
+            font-size: 140%;
+            padding: 4%;   
+            text-align: justify;
+          }
+  
+        /******************** tienda *******************/
+          .div-tienda{
+            max-width: 500px;
+            width: 100%; 
+          }
+          .titulo-productos{
+            text-align: center;
+          }
+          .linea1-tienda{
+            width: 100%;
+          }
+          .linea1-tienda h3{
+            font-size: 200%;
+          }
+          .linea1-tienda p{
+            font-size: 150%;
+          }
+          .linea1-tienda:hover{
+            width: 100%;
+          }
+  
+          /****************+ servicios **********/
+          .servicios{
+            width: 100%;
+            background:url("../img/Fotos/panel/PANEL JAPONES MONTAJE 4.jpg");
+            background-size:cover;
+          }
+          .div-servicios{
+          
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            max-width: 100%;
+            margin-top: 6%;
+            margin-bottom: 7%;
+            align-items: center;
+          }
+          .div-servicios2{
+          
+            width: 60%;
+            flex-wrap:nowrap;
+            margin-bottom: 10%;
+  
+          }
+          .div-servicios2 h1{
+          
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            text-align: center;
+            font-size: 220%;
+            margin-top: 5%;
+            margin-left: 3%;
+            margin-right: 3%;
+            margin-left: 5%;
+            text-shadow: 2px 2px 1px black;
+          }
+          .div-servicios2 li{
+          
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            text-align: justify;
+            font-size: 150%;
+            margin-top: 1%;
+            margin-left: 3%;
+            margin-right: 3%;
+            margin-bottom: 1%;
+            list-style:symbols();
+            text-shadow: 1px 1px 1px black;
+          }
+  
+          /************ footer ************/
+          footer{
+            background-color:#253954;
+            color: #ffffff;
+            transform: translateY(40px);
+          }
+          .secund-div{
+            flex-direction:row;
+          }
+          .h5-footer{
+            width: 50%;
+            color: #ffffff;
+            margin-top: 5%;
+            margin-bottom: 5%;
+          }
+        }
+  /**************** pantallas moviles de 700px ****************/
+  
+        @media screen and (max-width: 700px){
+          
+          /*.container-all{
+            transform: translateY(100px);  
+          }
+          header{
+            position: fixed;
+    
+          }*/
+          .menu{
+            width: 0px;
+            height: 100vh;
+            position: fixed;
+            top: 100px;
+            left: 0;
+            background: rgba(0, 0, 0, 0.897);
+            overflow: hidden;
+            transform: translateX(-350px);
+            box-shadow: 10px 0 20px -25px black;
+            transition: all 300ms cubic-bezier(1,0,0,1);
+          }
+          .show-lateral{
+            width: 250px;
+            transform: translateX(0px);
+          }
+          .menu nav ul {
+            flex-direction: column;
+          }
+  
+          .menu nav ul li{
+              max-width: 200px;
+              height: 50px;
+              justify-content: flex-start;
+          }
+  
+          .menu-selected:before{
+              width: 0;
+          }
+  
+          .menu nav ul li a{
+              margin-top: 40px;
+              color: #ffffff;
+          }
+  
+          .menu nav ul li a i{
+              width: 20px;
+              display: inline-block;
+              margin-right: 10px;
+              color: #ffffff;
+          }
+  
+          #icon-menu{
+            background-color: rgb(0, 0, 0);
+            display: flex;
+          }
+          #icon-menu:hover{
+            background-color: rgb(32, 32, 32);
+            display: flex;
+          }
+  
+        }
+        
+  /**************** pantallas moviles de 600px ****************/
+  
+        @media screen and (max-width: 600px){
+  
+  
+          header{
+            position: fixed;
+    
+          }
+  
+          .menu{
+            width: 0px;
+            height: 100vh;
+            position: fixed;
+            top: 100px;
+            left: 0;
+            background-color: #000f1be7;
+            overflow: hidden;
+            transform: translateX(-350px);
+            box-shadow: 10px 0 20px -25px black;
+            transition: all 300ms cubic-bezier(1,0,0,1);
+          }
+          .show-lateral{
+            width: 250px;
+            transform: translateX(0px);
+          }
+          .menu nav ul {
+            flex-direction: column;
+          }
+  
+          .menu nav ul li{
+              max-width: 200px;
+              height: 50px;
+              justify-content: flex-start;
+          }
+  
+          .menu-selected:before{
+              width: 0;
+          }
+  
+          .menu nav ul li a{
+              margin-top: 40px;
+              color: #ffffff;
+          }
+  
+          .menu nav ul li a i{
+              width: 20px;
+              display: inline-block;
+              margin-right: 10px;
+              color: #ffffff;
+          }
+  
+          #icon-menu{
+            background-color: rgb(0, 0, 0);
+            display: flex;
+          }
+          #icon-menu:hover{
+            background-color: rgb(32, 32, 32);
+            display: flex;
+          }
+  
+          /*************** servicios *************/
+          .div-servicios2{
+          
+            width: 60%;
+            flex-wrap:nowrap;
+            margin-top: 13%;
+            margin-bottom: 2%;
+  
+          }
+          
+      }
+  
+  /**************** pantallas moviles de 500px ****************/
+  
+    @media screen and (max-width: 500px) {
+  
+        /* mueve el menu */
+  
+        /*..move-container-all{
+          transform: translateX(300px);
+          transition: all 300ms ease-in-out;
+          z-index: 1;
+          overflow: auto;
+          background-color: rgb(0,0,0);
+          background-color: rgba(0,0,0,0.9);
+  
+        }*/
+  
+        /* barara de navegacion 
+        header{
+          position: relative;
+        }*/
+        .menu{
+          width: 0px;
+          height: 100vh;
+          position: fixed;
+          top: 100px;
+          left: 0;
+          background-color: #000f1be7;
+          overflow: hidden;
+          transform: translateX(-300px);
+          box-shadow: 10px 0 20px -25px black;
+        }
+        .show-lateral{
+          width: 250px;
+          transform: translateX(0px);
+        }
+  
+        .logo h3{ 
+          font-size: 150%;
+          color: #ffffff;
+          text-align: left;
+          padding: 2%;
+        }
+        .menu nav ul {
+          flex-direction: column;
+        }
+        .menu nav ul li{
+          max-width: 200px;
+          margin-top: 30px;
+          height: 50px;
+          justify-content: flex-start;
+        }
+        .menu-selected:before{
+          width: 0;
+        }
+        .menu nav ul li a{
+          color: #ffffff;
+        }
+        .menu nav ul li a:hover{
+          color: #ffffff;
+          text-decoration:underline
+        }
+        .menu nav ul li a i{
+          width: 20px;
+          display: inline-block;
+          margin-right: 10px;
+          color: #ffffff;
+        }
+        #icon-menu{
+            background-color: #000815;          
+            display: fixed;
+        }
+        #icon-menu:hover{
+            background-color: #00163a;          
+            display: fixed;
+        }
+      /*************** productos **************/
+      .titulo-productos h1{  
+        text-align: center;
+        margin-top: 30%;
+      }
+      .titulo-productos p{  
+        text-align: justify;
+        padding: 3%;
+      }
+      .linea1-tienda p{
+        font-size: 30px;
+        margin-bottom: 5%;
+      }
+      /***************+ servicios *****/
+      .div-servicios2{
+          
+        width: 60%;
+        flex-wrap:nowrap;
+        margin-top: 16%;
+        margin-bottom: 2%;
+  
+      }
+      /************ footer *******/
+      footer{
+        background-color:#253954; 
+        color: #ffffff;
+
+        transform: translateY(40px);
+      }
+      .secund-div{
+        flex-direction: column;
+      }
+      .h5-footer{
+        color: #ffffff;
+        margin-top: 5%;
+        margin-bottom: 2%;
+      }
+      .h5-footer h5{
+        color: #ffffff;
+      }
+  
+    }
+  
+  

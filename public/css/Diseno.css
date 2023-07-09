@@ -1,0 +1,1010 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/************************ Version movil ***************/
+
+@media screen and (max-width:800px) {
+
+  /****** barra de navegacion ****/
+
+  .menu{
+    width: 400px;
+    height: 80px;
+    margin: auto;
+    justify-content: space-evenly;
+  }
+  .menu li{
+    margin: 2px;
+    color: #fffffff3;
+  }
+  .menu li a{
+    color: #fffffff3;
+    text-decoration: none;
+    padding: 2px 2px;
+    transition: all 0.5s ease;
+    font-size: 15px;
+  
+  }
+
+  /***** Seccion tienda *****/
+
+  .div-tienda{
+
+    display: flex;
+    flex-direction: column;    
+    max-width: 800px;
+    margin: 0;
+    margin-top: 6%;
+    margin-bottom: 5%;
+    align-items: initial;
+  
+  }
+  .linea1-tienda{
+
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    border-radius: 2.5%;
+    border-style: solid;
+    border-color: #ffffff;
+    background-color: rgb(255, 255, 255);
+    box-shadow: #7a7a7a;
+  }
+  
+}
+
+/********************** footer **********************/
+
+footer{
+  width: 100%;
+  padding: 50px 0px;
+  background-size: cover;  
+  position: relative;
+  background-color:#d4d4d4; 
+}
+
+
+.secund-div{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
+
+.h5-footer h5{
+  margin-bottom: 3%;
+  color: #302f2f;
+  font-weight: 700;
+}
+.h5-footer li{
+  list-style-type: none;
+
+}
+
+.h5-footer ul{
+
+  margin: 0;
+  padding: 0;
+}
+
+.h5-footer a{
+  margin-top: 1%;
+  color: #7a7a7a;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.box__footer a .fab{
+  font-size: 20px;
+}
+
+/********************** barra de navegacion **********************/
+
+.nav{
+    width: 100%;
+    background-color:#000000;
+    display: flex;
+    height: 14%;
+    padding-top: 1%;
+    color:#000000;
+    justify-content: space-between;
+    transition: all 0.5s ease;  
+    z-index: 99;
+}
+.nav.active{
+    padding: 15px;
+    background-color: #000000;
+
+}
+.nav.active:hover {
+
+    color: #000000f3;
+    text-decoration: none;
+    background: #000000;
+    padding: 15px;
+    border-radius: 20px;
+}
+[id=div-inicio2]{
+
+    text-align:right;
+    margin-top: 10%;
+}
+.titulo{
+  width:100%;
+  font-size: 200%;
+  font-weight: 500;    
+  margin-left: 1.5%;
+  color:#ffffff;
+}
+.menu{
+    
+  justify-content: center;
+  display:flex;
+  list-style: none;
+  
+}
+.menu li{
+  margin: 20px;
+  color: #fffffff3;
+
+}
+.menu li a{
+  color: #fffffff3;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: all 0.5s ease;
+
+}
+.menu li a:hover{
+  color: #000000f3;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 10px 15px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+/************************************ Inicio *****************/
+.introduccion{
+  max-width: 100%;
+  width: 100%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.index-div{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  
+}
+div.index3{
+  width: 50%;
+  margin-left: 1%;
+
+}
+div.index2{
+  width: 45%;
+
+}
+.imagenes{
+
+  max-width:100% ;
+
+}
+.imagenes img{
+  width: 100%;
+}
+.index2 h2{
+
+  color: #302f2f;
+  font-weight: 700;
+
+}
+.index2 h2.fab{
+
+color: #302f2f;
+font-weight: 700;
+
+}
+
+
+/*****************************  Tienda  **********************************/
+
+.div-tienda{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 75%;
+  margin: auto;
+  margin-top: 6%;
+  margin-bottom: 7%;
+  align-items: center;
+
+}
+.div-tienda p{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 75%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  align-items: center;
+  text-align: justify;
+  font-size: 150%;
+}
+.linea1-tienda{
+
+  width: 31%;
+  height: 100%;
+  flex-wrap: wrap;
+  border-radius: 2.5%;
+  border-style: solid;
+  border-color: #ffffff;
+  background-color: rgb(255, 255, 255);
+  box-shadow: #7a7a7a;
+}
+
+.linea1-tienda h3{
+
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 150%;
+  margin-top: 5%;
+  margin-left: 5%;
+
+}
+.linea1-tienda p{
+
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 110%;
+  margin-top: 5%;
+  margin-left: 5%;
+
+}
+
+
+.linea1-tienda button{
+  width: 40%;
+  margin-left: 55%;
+  margin-bottom: 2%;
+}
+
+.linea1-tienda:hover{
+
+  width: 31%;
+  height: 100%;
+  flex-wrap: wrap;
+  border-radius: 2.5%;
+  border-style: groove;
+  background-color: rgb(255, 255, 255);
+  transition: 0.2s ease-in-out;
+}
+/***************** Boton WhatsApp ***********************/
+.container-boton{
+  background-color: #2e6329;
+  border: 1px solid #fff;
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 50px;
+  right: 25px;
+  padding: 13px;
+  transition: ease 0.3s;
+  animation: efecto 3s infinite;
+}
+
+.container-boton:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.boton{
+  width: 60px;
+  transition: ease 1s;
+
+}
+
+@keyframes efecto{
+  0%{
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+  }
+  100%{
+      box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+  }
+}
+/****************************** Servicios **********************/
+.servicios{
+  width: 100%;
+  height: 100%;
+  background:url("../img/Fotos/panel/PANEL JAPONES MONTAJE 4.jpg");
+  background-size: contain;
+  
+}
+.div-servicios{
+
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
+  margin: auto;
+  margin-top: 6%;
+  margin-bottom: 7%;
+  align-items: center;
+}
+.div-servicios2{
+
+  width: 35%;
+  height: 100%;
+  flex-wrap: wrap;
+  border-radius: 6%;
+  border-style: solid;
+  background: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+  box-shadow: #ffffff;
+}
+.div-servicios2 h1{
+
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  text-align: center;
+  font-size: 220%;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.div-servicios2 li{
+
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  text-align: center;
+  font-size: 120%;
+  margin-top: 5%;
+  list-style: none;
+
+}
+
+
+/********************************************** panel ****************************************/
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 50%;
+  max-width: 100%;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto; 
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 100px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/*********************************************sher elegance********************************************/
+
+
+#myImg1 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg1:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content1 {
+  margin: auto;
+  display: block;
+  width: 50%;
+  max-width: 100%;
+}
+
+/* Caption of Modal Image */
+#caption1 {
+  margin: auto; 
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content1, #caption1 {
+
+  -webkit-animation-name: zoom1;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom1;
+  animation-duration: 0.6s;
+
+}
+
+@-webkit-keyframes zoom1 {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom1 {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close1 {
+  position: absolute;
+  top: 100px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content1 {
+    width: 100%;
+  }
+}
+
+/*********************************************sher screen********************************************/
+
+#myImg2 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg2:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content2 {
+  margin: auto;
+  display: block;
+  width: 50%;
+  max-width: 100%;
+}
+
+/* Caption of Modal Image */
+#caption2 {
+  margin: auto; 
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content2, #caption2 {
+
+  -webkit-animation-name: zoom2;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom2;
+  animation-duration: 0.6s;
+
+}
+
+@-webkit-keyframes zoom2 {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom2 {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close2 {
+  position: absolute;
+  top: 100px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content2 {
+    width: 100%;
+  }
+}
+
+/******************************+ Persiana Vertical *********************************/
+
+#myImg3 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg3:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content3 {
+  margin: auto;
+  display: block;
+  width: 50%;
+  max-width: 100%;
+}
+
+/* Caption of Modal Image */
+#caption3 {
+  margin: auto; 
+  display: block;
+  width: 80%;
+  max-width: 100%;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content3, #caption3 {
+
+  -webkit-animation-name: zoom3;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom3;
+  animation-duration: 0.6s;
+
+}
+
+@-webkit-keyframes zoom3 {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom3 {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close3 {
+  position: absolute;
+  top: 100px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content3 {
+    width: 100%;
+  }
+}
+
+/************************************ Romana *********************************/
+
+#myImg4 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg4:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal4 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content4 {
+  margin: auto;
+  display: block;
+  width: 50%;
+  max-width: 100%;
+}
+
+/* Caption of Modal Image */
+#caption4 {
+  margin: auto; 
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content4, #caption4 {
+
+  -webkit-animation-name: zoom4;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom4;
+  animation-duration: 0.6s;
+
+}
+
+@-webkit-keyframes zoom4 {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom4 {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close4 {
+  position: absolute;
+  top: 100px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close4:hover,
+.close4:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content4 {
+    width: 100%;
+  }
+}
+
+/*************************** Enrollables ****************/
+
+#myImg5 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg5:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal5 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content5 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 450PX;
+}
+
+/* Caption of Modal Image */
+#caption5 {
+  margin: auto; 
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content5, #caption5 {
+
+  -webkit-animation-name: zoom5;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom5;
+  animation-duration: 0.6s;
+
+}
+
+@-webkit-keyframes zoom5 {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom5 {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close5{
+  position: absolute;
+  top: 100px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close5:hover,
+.close5:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content5 {
+    width: 100%;
+  }
+}
+
+/****************************** Mini ppersiana en aluminio *************************/
+
+
+#myImg6 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg6:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal6 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content6 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 450PX;
+}
+
+/* Caption of Modal Image */
+#caption6 {
+  margin: auto; 
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content6, #caption6 {
+
+  -webkit-animation-name: zoom6;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom6;
+  animation-duration: 0.6s;
+
+}
+
+@-webkit-keyframes zoom6 {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom6 {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close6{
+  position: absolute;
+  top: 100px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close6:hover,
+.close6:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content6 {
+    width: 100%;
+  }
+}
